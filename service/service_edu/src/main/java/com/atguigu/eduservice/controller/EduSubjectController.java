@@ -36,10 +36,10 @@ public class EduSubjectController {
     }
 
     @ApiOperation(value = "嵌套数据列表")
-    @GetMapping("")
+    @GetMapping("getAllSubject")
     public R nestedList(){
-        List<OneSubject> oneSubjectList = subjectService.getAllOneSubject();
-        return R.ok().data("items", oneSubjectList);
+        List<OneSubject> list = subjectService.getAllOneTwoSubject();
+        return R.ok().data("list", list);
     }
 
 }

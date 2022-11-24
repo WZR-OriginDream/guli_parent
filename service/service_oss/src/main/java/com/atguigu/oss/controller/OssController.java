@@ -24,7 +24,6 @@ public class OssController {
 
     /**
      * 文件上传
-     *
      * @param file
      */
     @ApiOperation(value = "文件上传")
