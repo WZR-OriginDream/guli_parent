@@ -21,7 +21,7 @@ public class MsmServiceImpl implements MsmService {
     public boolean send(Map<String, Object> param, String phone) {
         if(StringUtils.isEmpty(phone)) return false;
 
-        DefaultProfile profile = DefaultProfile.getProfile("cn-shenzhen", "LTAI5tPJxSUb6tWRtZxFiedN", "ex3sDQSsVTJph5MwmST5rMD9v6FURT");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-shenzhen", "yourkeyid", "yourkeysecret");
         IAcsClient client = new DefaultAcsClient(profile);
 
         //设置相关固定的参数
