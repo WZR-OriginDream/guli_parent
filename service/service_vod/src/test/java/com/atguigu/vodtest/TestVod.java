@@ -23,8 +23,8 @@ public class TestVod {
     public static void main(String[] args) throws Exception {
         getPlayInfo();
 //        getPlayAuth();
-//        testUploadVideo1("LTAI5tPJxSUb6tWRtZxFiedN","ex3sDQSsVTJph5MwmST5rMD9v6FURT","测试视频","E:/test.mp4");
-//        testUploadVideo2("LTAI5tPJxSUb6tWRtZxFiedN","ex3sDQSsVTJph5MwmST5rMD9v6FURT","测试视频","E:/test.mp4");
+//        testUploadVideo1("yourkeyid","yourkeysecret","测试视频","E:/test.mp4");
+//        testUploadVideo2("yourkeyid","yourkeysecret","测试视频","E:/test.mp4");
     }
 
     /**
@@ -84,7 +84,7 @@ public class TestVod {
 
 
     public static void getPlayAuth() throws Exception {
-        DefaultAcsClient client = InitObject.initVodClient("LTAI5tPJxSUb6tWRtZxFiedN", "ex3sDQSsVTJph5MwmST5rMD9v6FURT");
+        DefaultAcsClient client = InitObject.initVodClient("yourkeyid", "yourkeysecret");
         GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
         GetVideoPlayAuthResponse response = new GetVideoPlayAuthResponse();
         try {
@@ -102,7 +102,7 @@ public class TestVod {
 
     public static void getPlayInfo() throws Exception {
         //初始化客户端、请求对象和相应对象
-        DefaultAcsClient client = InitObject.initVodClient("LTAI5tPJxSUb6tWRtZxFiedN", "ex3sDQSsVTJph5MwmST5rMD9v6FURT");
+        DefaultAcsClient client = InitObject.initVodClient("yourkeyid", "yourkeysecret");
         GetPlayInfoRequest request = new GetPlayInfoRequest();
         GetPlayInfoResponse response = new GetPlayInfoResponse();
         try {
